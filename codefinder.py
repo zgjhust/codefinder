@@ -108,7 +108,7 @@ def get_code_description(code):
 @app.route('/weixin/', methods=['GET', 'POST'])
 def weixin_textmsg_handler():
     if request.method == 'GET':
-        token = 'pygeek'
+        token = 'your weixin token'
         signature = request.args.get('signature', '')
         timestamp = request.args.get('timestamp', '')
         nonce = request.args.get('nonce', '')
